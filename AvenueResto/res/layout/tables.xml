@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:baselineAligned="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="#000000" xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    
+     <LinearLayout
+		              android:layout_width="match_parent"
+			    	  android:layout_height="wrap_content"
+			    	  android:orientation="horizontal"
+			          android:background="#FFFFFF"
+			          android:layout_margin="1dp">
+			          <LinearLayout 
+			              android:layout_width="wrap_content"
+				    	  android:layout_height="wrap_content"
+				    	  android:orientation="horizontal"
+				          android:background="#FFFFFF"
+				          android:layout_margin="1dp">
+				          <Button
+				              android:layout_width="wrap_content"
+				              android:layout_height="fill_parent"
+				              android:textSize="25dp"
+				              android:text="@string/newOrd"
+				              android:id="@+id/newbtn"/>
+				          				              
+				           <Button
+				              android:layout_width="wrap_content"
+				              android:layout_height="fill_parent"
+				              android:textSize="25dp"
+				              android:text="@string/editOrd"
+				               android:id="@+id/editOrderbtn"/>
+				           
+				           <Button  
+				              android:layout_width="wrap_content"
+						      android:layout_height="fill_parent"
+						      android:textSize="25dp"
+					          android:id="@+id/sendbtn"
+					          android:text="@string/send"/>"
+	                  
+			              
+			          </LinearLayout>
+		            <HorizontalScrollView android:id="@+id/HorizontalScrollView05"
+						android:layout_height="wrap_content" 
+						android:layout_width="wrap_content"
+						android:background="#FFFFFF"
+						android:layout_margin="5dp"
+						android:layout_marginBottom="0dp"
+						android:scrollbars="none"
+						android:layout_weight="1">
+					<LinearLayout android:id="@+id/LinearLayout05"
+							android:layout_width="wrap_content" 
+							android:orientation="horizontal"
+							
+							android:layout_height="wrap_content">"
+						
+					</LinearLayout>
+		            </HorizontalScrollView>
+		           
+		            
+    </LinearLayout>
+    
+     <LinearLayout
+           android:layout_width="match_parent"
+		   android:layout_height="wrap_content"
+		   android:orientation="horizontal"
+		   android:background="#FFFFFF"
+		   android:layout_margin="1dp">
+		            
+            <LinearLayout 
+	              android:layout_width="wrap_content"
+		    	  android:layout_height="wrap_content"
+	
+		    	  android:orientation="horizontal"
+		    	  android:background="#FFFFFF"
+		          android:layout_margin="1dp">
+	            
+
+
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:text="@string/qty"
+	                android:textSize="25dp" />
+
+	            <EditText
+	             
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:id="@+id/QtyTxt"
+	                android:inputType="number"
+	                android:textSize="25dp"/>
+	            
+	        </LinearLayout>
+	      
+		  
+         
+         
+          <HorizontalScrollView android:id="@+id/HorizontalScrollView02"
+				android:layout_height="wrap_content" android:layout_width="wrap_content" 
+				android:background="#FFFFFF" 
+				android:layout_margin="5dp"
+				android:layout_marginBottom="0dp"
+				android:scrollbars="none">
+					<LinearLayout 
+					    android:id="@+id/LinearLayout03"
+						android:layout_width="wrap_content" 
+						android:orientation="horizontal"
+						android:layout_height="50dp">
+					
+					</LinearLayout>
+	      </HorizontalScrollView>
+     </LinearLayout>
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="#000000"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_margin="0dp"
+	        android:layout_weight="2"
+	        android:background="#FFFFFF"
+	        android:orientation="vertical" >
+	       
+		    <ScrollView android:id="@+id/ScrollView1"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:background="#FFFFFF" 
+				android:layout_margin="5dp"
+				android:scrollbars="none">
+					<LinearLayout android:id="@+id/LinearLayout04" android:orientation="vertical"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+					
+					</LinearLayout>
+		    </ScrollView>
+		    <LinearLayout
+	             android:id="@+id/remarkslayout"
+	            
+	             android:layout_width="match_parent"
+		    	 android:layout_height="0px"
+		    	 android:layout_weight="0"
+	             android:layout_marginLeft="1dp"
+	             android:orientation="vertical">"
+	             
+	              <RelativeLayout
+	                android:layout_width="match_parent"
+		    	    android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:layout_weight="0.5">
+	                
+	                <ListView 
+		                android:id="@+id/remarklistview"
+		                android:layout_width="match_parent"
+			    	    android:layout_height="fill_parent" 
+			    	    android:layout_margin="10dp"
+			    	    
+			    	    />
+	                
+	                
+	            </RelativeLayout>
+	            <RelativeLayout
+	                android:layout_width="match_parent"
+		    	    android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:layout_weight="0.5">
+	                <TextView  
+		                 android:layout_width="wrap_content"
+			    	     android:layout_height="wrap_content"
+			    	     android:text="Remarks"
+			    	 
+			           
+			    	     android:textStyle="bold"
+			    	     android:gravity="center"
+			    	     android:textSize="20dp"
+			    	     android:id="@+id/remarkslabel"
+			    	     android:layout_margin="5dp"
+			    	     />
+	                
+	                  <ListView 
+		                android:id="@+id/menuItemRemarksListView"
+		                android:layout_width="match_parent"
+			    	    android:layout_height="fill_parent" 
+			    	    android:layout_margin="10dp"
+			    	    
+			    	    />
+	                
+	                
+	                <Button
+				      android:layout_width="wrap_content"
+				      android:layout_height="wrap_content"
+				      android:textSize="25dp"
+				      android:text="@string/close"
+				      android:layout_margin="5dp"
+				      android:layout_alignParentBottom="true"
+				      android:id="@+id/closeremarksbtn" />"
+	            </RelativeLayout>
+	            </LinearLayout>
+	    </LinearLayout>
+
+	    <LinearLayout 
+	        
+	         android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_margin="0dp"
+	        android:layout_weight="1"
+	        android:background="#000000"
+	        android:orientation="vertical" >
+	      
+		    
+	        
+	       
+	        <LinearLayout
+	            android:id="@+id/orderlayout"
+	            android:layout_width="match_parent"
+		        android:layout_height="0px"
+		    	android:layout_weight="8"
+	            android:layout_marginLeft="1dp"
+	            android:background="#FFFFFF"
+	            android:orientation="vertical" >
+		          
+		            <TextView  
+		                 android:layout_width="wrap_content"
+			    	     android:layout_height="wrap_content"
+			    	     android:text="@string/ord"
+			    	 
+			           
+			    	     android:textStyle="bold"
+			    	     android:gravity="center"
+			    	     android:textSize="30dp"
+			    	     android:id="@+id/orderlabel"
+			    	     android:layout_margin="5dp"
+			    	     />
+		            <ListView 
+		                android:id="@+id/orderlistview"
+		                android:layout_width="match_parent"
+			    	    android:layout_height="fill_parent" 
+			    	    android:layout_margin="10dp"
+			    	    
+			    	    />
+		                
+		            
+		            
+		    </LinearLayout>
+	       
+
+
+
+
+	        <RelativeLayout
+	            android:id="@+id/totlayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="0px"
+	            android:layout_marginLeft="1dp"
+	            android:layout_weight="1"
+	            android:background="#FFFFFF"
+	            android:orientation="horizontal" >
+
+		            <TextView
+	                     android:layout_width="wrap_content"
+			    	     android:layout_height="wrap_content"
+			    	     android:text="@string/totItems"
+	    	           
+	    	             android:layout_alignParentLeft="true"
+			    	     android:textStyle="bold"
+			    	     android:id="@+id/tlbl"
+			    	     android:textSize="25dp"
+			    	     android:layout_margin="5dp"/>
+		            <TextView
+		                 android:layout_width="wrap_content"
+			    	     android:layout_height="wrap_content"
+			    	
+			    	     android:textStyle="bold"
+			    	     android:layout_toRightOf="@+id/tlbl"
+			    	     android:layout_margin="5dp"
+			    	     android:textSize="25dp" 
+			    	     android:id="@+id/itemTot"/>
+		            
+	                <TextView
+	                     android:layout_width="wrap_content"
+			    	     android:layout_height="wrap_content"
+			    	     android:text="@string/totAmt"
+	    	            
+			    	     android:textStyle="bold"
+			    	     android:textSize="25dp"
+	    		    	 android:layout_toLeftOf="@+id/amtTot"
+			    	     android:layout_margin="5dp"/>
+	                
+	                 <TextView
+	                     android:layout_width="wrap_content"
+			    	     android:layout_height="wrap_content"
+			    	   
+			    	     android:textStyle="bold"
+			    	     android:layout_alignParentRight="true"
+			    	     android:layout_margin="5dp"
+	                     android:textSize="25dp"
+			    	     android:id="@+id/amtTot"/>  
+	                
+	        </RelativeLayout>
+            
+	         <LinearLayout
+	             android:id="@+id/orderEditlayout"
+	            
+	             android:layout_width="match_parent"
+		    	 android:layout_height="0px"
+		    	 android:layout_weight="0"
+	             android:layout_marginLeft="1dp"
+	             android:orientation="vertical">"
+	             
+	              <LinearLayout
+	                android:layout_width="match_parent"
+		    	    android:layout_height="wrap_content"
+	                android:orientation="horizontal">
+	                
+	                <TextView
+	                    android:text="@string/ordertablelbl"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:layout_margin="5dp"
+	                	android:textSize="25dp"
+	                    />
+	                <EditText
+				        android:id="@+id/orderTablenoTxt"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_margin="5dp"
+	                	android:textSize="25dp"
+	                	android:inputType="number"
+	                	android:text="@string/star"
+				        />
+	            </LinearLayout>
+	             
+	             
+	             <LinearLayout
+	                android:layout_width="match_parent"
+		    	    android:layout_height="wrap_content"
+	                android:orientation="horizontal">
+	                
+	                <TextView
+	                    android:text="@string/orderType"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:layout_margin="5dp"
+	                	android:textSize="25dp"
+	                    />
+	                <Spinner
+				        android:id="@+id/orderTypespinner"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:entries="@array/orderType"
+				        />
+	            </LinearLayout>
+	            
+	             
+	              <LinearLayout
+	                android:layout_width="match_parent"
+		    	    android:layout_height="wrap_content"
+	                android:orientation="horizontal">
+	                
+	                <TextView
+	                    android:text="@string/paxlbl"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:layout_margin="5dp"
+	                	android:textSize="25dp"
+	                    />
+	                <EditText
+				        android:id="@+id/paxTxt"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_margin="5dp"
+	                	android:textSize="25dp"
+	                	android:inputType="number"
+	                	android:text="@string/one"
+				        />
+	            </LinearLayout>
+	             
+	             <LinearLayout
+	                android:layout_width="match_parent"
+		    	    android:layout_height="wrap_content"
+	                android:orientation="horizontal">
+	                
+	                <TextView
+	                    android:text="@string/customerNamelbl"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:layout_margin="5dp"
+	                	android:textSize="25dp"
+	                    />
+	                <EditText
+				        android:id="@+id/customerNameTxt"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_margin="5dp"
+	                	android:textSize="25dp"
+	                	android:inputType="text"
+	                	android:text="@string/na"
+				        />
+	            </LinearLayout>
+	             
+	             
+	             <LinearLayout
+	                android:layout_width="match_parent"
+		    	    android:layout_height="wrap_content"
+	                android:orientation="horizontal">
+	                
+	                <TextView
+	                    android:text="@string/customerAddresslbl"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:layout_margin="5dp"
+	                	android:textSize="25dp"
+	                    />
+	                <EditText
+				        android:id="@+id/customerAddressTxt"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_margin="5dp"
+	                	android:textSize="25dp"
+	                	android:inputType="text"
+	                	android:text="@string/na"
+				        />
+	            </LinearLayout>
+	            
+	             <LinearLayout
+	                android:layout_width="match_parent"
+		    	    android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:layout_margin="5dp"
+	                
+	                 >
+	                
+	                 <Button
+				      android:layout_width="wrap_content"
+				      android:layout_height="wrap_content"
+				      android:textSize="25dp"
+				      android:text="@string/createOrderlbl"
+				      android:id="@+id/createOrderbtn"
+				      android:layout_margin="5dp"/>
+				          				             
+	            
+	                <Button
+				      android:layout_width="wrap_content"
+				      android:layout_height="wrap_content"
+				      android:textSize="25dp"
+				      android:text="@string/close"
+				      android:id="@+id/closebtn"
+				      android:layout_margin="5dp"/>
+	             </LinearLayout>
+	            
+				          				              
+	       
+		           
+		    </LinearLayout>
+	    </LinearLayout> 
+	         
+	   
+	    
+	    
+	    
+   
+    </LinearLayout>
+        
+
+
+</LinearLayout>

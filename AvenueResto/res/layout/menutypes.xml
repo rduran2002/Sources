@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:rowCount="2"
+    android:columnCount="3">
+    
+  
+ 
+		<Button android:id="@+id/BtnAppetizer"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:drawableTop="@drawable/appetizer"
+		android:text="Appetizer"
+		android:textColor="#FFFFFF" 
+		android:textStyle="bold"
+		android:textSize="15dp"
+	    android:layout_margin="10dp"
+		android:background="#0000"
+		/>
+		
+		<Button android:id="@+id/BtnMainCourse"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:drawableTop="@drawable/maincourse"
+		android:text="Main Course"
+		android:textColor="#FFFFFF" 
+		android:textStyle="bold"
+		android:textSize="15dp"
+		android:layout_margin="10dp"
+		android:background="#0000"/>
+		
+		<Button android:id="@+id/BtnBeverages"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:drawableTop="@drawable/beverages"
+		android:text="Beverages"
+		android:textColor="#FFFFFF" 
+		android:textStyle="bold"
+		android:textSize="15dp"
+		android:layout_margin="10dp"
+		android:background="#0000"/>
+		
+		<Button android:id="@+id/BtnShortOrders"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:drawableTop="@drawable/shortcourse"
+		android:text="ShortOrders"
+		android:textColor="#FFFFFF" 
+		android:textStyle="bold"
+		android:textSize="15dp"
+		android:layout_margin="10dp"
+		android:background="#0000"/>
+		
+		<Button android:id="@+id/BtnDesserts"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:drawableTop="@drawable/dessert"
+		android:text="Desserts"
+		android:textColor="#FFFFFF" 
+		android:textStyle="bold"
+		android:textSize="15dp"
+		android:layout_margin="10dp"
+		android:background="#0000"/>
+		
+		<Button android:id="@+id/BtnListOrders"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:drawableTop="@drawable/list"
+		android:text="Orders"
+		android:textColor="#FFFFFF" 
+		android:textStyle="bold"
+		android:textSize="15dp"
+		android:layout_margin="10dp"
+		android:background="#0000"/>
+		
+		  
+
+    
+    
+</GridLayout>
